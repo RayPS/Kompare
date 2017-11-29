@@ -1,16 +1,58 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 0,
+          "top" : 215,
+          "right" : 44,
+          "left" : 250
+        }
+      },
       "idiom" : "universal",
       "filename" : "Steps.png",
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 0,
+          "top" : 431,
+          "right" : 89,
+          "left" : 500
+        }
+      },
       "idiom" : "universal",
       "filename" : "Steps@2x.png",
       "scale" : "2x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 0,
+          "top" : 647,
+          "right" : 134,
+          "left" : 750
+        }
+      },
       "idiom" : "universal",
       "filename" : "Steps@3x.png",
       "scale" : "3x"

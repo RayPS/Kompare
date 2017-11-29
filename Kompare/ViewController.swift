@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var backgroundColorSegmentControl: UISegmentedControl!
+    @IBOutlet weak var aboutButton: UIButton!
 
     var userDefaults = UserDefaults(suiteName: "group.Kompare")
 
@@ -26,6 +27,12 @@ class ViewController: UIViewController {
         userDefaults?.set(sender.selectedSegmentIndex, forKey: "backgroundColor")
     }
 
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PresentAboutPopover" {
+            segue.destination.popoverPresentationController?.sourceRect = aboutButton.bounds
+        }
+    }
 
 }
 

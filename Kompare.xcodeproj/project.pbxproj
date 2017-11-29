@@ -17,6 +17,7 @@
 		7194DDDD1FCD74690078F118 /* Kompare Action.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7194DDD31FCD74690078F118 /* Kompare Action.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7194DDE21FCE63B00078F118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7194DDB11FCD6DD30078F118 /* Assets.xcassets */; };
 		7194DDE91FCE76580078F118 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDE81FCE76580078F118 /* Haptic.swift */; };
+		71F021071FCF4FBA001B446C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F021061FCF4FBA001B446C /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		7194DDE81FCE76580078F118 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 		71F021041FCF44C5001B446C /* Kompare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kompare.entitlements; sourceTree = "<group>"; };
 		71F021051FCF4532001B446C /* Kompare Action.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kompare Action.entitlements"; sourceTree = "<group>"; };
+		71F021061FCF4FBA001B446C /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				7194DDAA1FCD6DD30078F118 /* AppDelegate.swift */,
 				7194DDAC1FCD6DD30078F118 /* ViewController.swift */,
 				7194DDAE1FCD6DD30078F118 /* Main.storyboard */,
+				71F021061FCF4FBA001B446C /* AboutViewController.swift */,
 				7194DDB11FCD6DD30078F118 /* Assets.xcassets */,
 				7194DDB31FCD6DD30078F118 /* LaunchScreen.storyboard */,
 				7194DDB61FCD6DD30078F118 /* Info.plist */,
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F021071FCF4FBA001B446C /* AboutViewController.swift in Sources */,
 				7194DDAD1FCD6DD30078F118 /* ViewController.swift in Sources */,
 				7194DDAB1FCD6DD30078F118 /* AppDelegate.swift in Sources */,
 			);

@@ -56,6 +56,8 @@
 		7194DDD81FCD74690078F118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		7194DDDA1FCD74690078F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7194DDE81FCE76580078F118 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
+		71F021041FCF44C5001B446C /* Kompare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kompare.entitlements; sourceTree = "<group>"; };
+		71F021051FCF4532001B446C /* Kompare Action.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kompare Action.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		7194DDA91FCD6DD30078F118 /* Kompare */ = {
 			isa = PBXGroup;
 			children = (
+				71F021041FCF44C5001B446C /* Kompare.entitlements */,
 				7194DDAA1FCD6DD30078F118 /* AppDelegate.swift */,
 				7194DDAC1FCD6DD30078F118 /* ViewController.swift */,
 				7194DDAE1FCD6DD30078F118 /* Main.storyboard */,
@@ -110,6 +113,7 @@
 		7194DDD41FCD74690078F118 /* Kompare Action */ = {
 			isa = PBXGroup;
 			children = (
+				71F021051FCF4532001B446C /* Kompare Action.entitlements */,
 				7194DDD51FCD74690078F118 /* ActionViewController.swift */,
 				7194DDD71FCD74690078F118 /* MainInterface.storyboard */,
 				7194DDDA1FCD74690078F118 /* Info.plist */,
@@ -170,10 +174,20 @@
 					7194DDA61FCD6DD30078F118 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7194DDD21FCD74690078F118 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -387,6 +401,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kompare/Kompare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MGAF98TG33;
 				INFOPLIST_FILE = Kompare/Info.plist;
@@ -403,6 +418,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kompare/Kompare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MGAF98TG33;
 				INFOPLIST_FILE = Kompare/Info.plist;
@@ -418,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ExtensionIcon;
+				CODE_SIGN_ENTITLEMENTS = "Kompare Action/Kompare Action.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MGAF98TG33;
 				INFOPLIST_FILE = "Kompare Action/Info.plist";
@@ -435,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ExtensionIcon;
+				CODE_SIGN_ENTITLEMENTS = "Kompare Action/Kompare Action.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MGAF98TG33;
 				INFOPLIST_FILE = "Kompare Action/Info.plist";

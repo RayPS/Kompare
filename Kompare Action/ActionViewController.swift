@@ -78,7 +78,7 @@ class ActionViewController: UIViewController {
         imageView.transform = CGAffineTransform(translationX: 0, y: translation.y)
         if sender.state == .ended {
             let triggerPoint: CGFloat = 200.0
-            if translation.y >= triggerPoint {
+            if abs(translation.y) >= triggerPoint {
                 done()
             } else {
                 UIView.animate(

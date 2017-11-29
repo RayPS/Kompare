@@ -11,9 +11,11 @@ import MobileCoreServices
 
 class ActionViewController: UIViewController {
 
+    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var indexLabel: UILabel!
 
+    var userDefaults = UserDefaults(suiteName: "group.Kompare")
     let queue = OperationQueue.main
     var collectedImages: [UIImage] = []
     var currentImageIndex: Int = 0 {
@@ -44,6 +46,15 @@ class ActionViewController: UIViewController {
                         }
                     }
                 }
+            }
+        }
+
+        if let backgroundColor = userDefaults?.value(forKey: "backgroundColor") {
+            let colorIndex = backgroundColor as! Int
+            if colorIndex == 1 {
+                view.backgroundColor = .white
+                closeButton.setImage(#imageLiteral(resourceName: "Close_dark"), for: .normal)
+                indexLabel.textColor = .black
             }
         }
     }

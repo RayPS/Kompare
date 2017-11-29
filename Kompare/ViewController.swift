@@ -10,14 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var backgroundColorSegmentControl: UISegmentedControl!
+
+    var userDefaults = UserDefaults(suiteName: "group.Kompare")
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        if let backgroundColor = userDefaults?.value(forKey: "backgroundColor") {
+            backgroundColorSegmentControl.selectedSegmentIndex = backgroundColor as! Int
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func backgroundColorSegmentControlChanged(_ sender: UISegmentedControl) {
+        userDefaults?.set(sender.selectedSegmentIndex, forKey: "backgroundColor")
     }
 
 

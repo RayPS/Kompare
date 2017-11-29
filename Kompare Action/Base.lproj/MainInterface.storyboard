@@ -63,6 +63,7 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="closeButton" destination="HGJ-Ci-neT" id="vc8-6L-8BG"/>
                         <outlet property="imageView" destination="9ga-4F-77Z" id="5y6-5w-9QO"/>
                         <outlet property="indexLabel" destination="ZBs-29-nhq" id="r4J-0J-IrZ"/>
                         <outlet property="view" destination="zMn-AG-sqS" id="Qma-de-2ek"/>

@@ -417,6 +417,7 @@
 		7194DDDE1FCD74690078F118 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ExtensionIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MGAF98TG33;
 				INFOPLIST_FILE = "Kompare Action/Info.plist";
@@ -433,6 +434,7 @@
 		7194DDDF1FCD74690078F118 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ExtensionIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MGAF98TG33;
 				INFOPLIST_FILE = "Kompare Action/Info.plist";

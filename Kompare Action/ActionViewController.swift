@@ -15,11 +15,7 @@ class ActionViewController: UIViewController {
     @IBOutlet weak var indexLabel: UILabel!
 
     let queue = OperationQueue.main
-    var collectedImages: [UIImage] = [] {
-        didSet {
-            print("----- collectedImages didSet: ", collectedImages)
-        }
-    }
+    var collectedImages: [UIImage] = []
     var currentImageIndex: Int = 0 {
         didSet {
             if currentImageIndex + 1 > collectedImages.count {
@@ -32,26 +28,21 @@ class ActionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // Get the item[s] we're handling from the extension context.
 
         queue.addObserver(self, forKeyPath: "operations", options: .new, context: nil)
-        
-        // For example, look for an image and place it into an image view.
-        // Replace this with something appropriate for the type[s] your extension supports.
-        for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
-            for provider in item.attachments! as! [NSItemProvider] {
-                if provider.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
-                    // This is an image. We'll load it, then place it in our image view.
-                    provider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil, completionHandler: { (imageURL, error) in
-                        self.queue.addOperation {
-                            if let imageURL = imageURL as? URL {
-                                if let image = UIImage(data: try! Data(contentsOf: imageURL)) {
-                                    self.collectedImages.append(image)
-                                }
-                            }
+
+        let extensionItems = (self.extensionContext!.inputItems as! [NSExtensionItem]).first!
+        let attachments = extensionItems.attachments! as! [NSItemProvider]
+
+        for provider in attachments {
+            provider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil) {
+                (imageURL, error) in
+                self.queue.addOperation {
+                    if let imageURL = imageURL as? URL {
+                        if let image = UIImage(data: try! Data(contentsOf: imageURL)) {
+                            self.collectedImages.append(image)
                         }
-                    })
+                    }
                 }
             }
         }

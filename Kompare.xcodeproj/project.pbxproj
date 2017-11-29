@@ -15,6 +15,8 @@
 		7194DDD61FCD74690078F118 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDD51FCD74690078F118 /* ActionViewController.swift */; };
 		7194DDD91FCD74690078F118 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7194DDD71FCD74690078F118 /* MainInterface.storyboard */; };
 		7194DDDD1FCD74690078F118 /* Kompare Action.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7194DDD31FCD74690078F118 /* Kompare Action.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7194DDE21FCE63B00078F118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7194DDB11FCD6DD30078F118 /* Assets.xcassets */; };
+		7194DDE91FCE76580078F118 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDE81FCE76580078F118 /* Haptic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		7194DDD51FCD74690078F118 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		7194DDD81FCD74690078F118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		7194DDDA1FCD74690078F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7194DDE81FCE76580078F118 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 				7194DDD51FCD74690078F118 /* ActionViewController.swift */,
 				7194DDD71FCD74690078F118 /* MainInterface.storyboard */,
 				7194DDDA1FCD74690078F118 /* Info.plist */,
+				7194DDE81FCE76580078F118 /* Haptic.swift */,
 			);
 			path = "Kompare Action";
 			sourceTree = "<group>";
@@ -207,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7194DDE21FCE63B00078F118 /* Assets.xcassets in Resources */,
 				7194DDD91FCD74690078F118 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7194DDE91FCE76580078F118 /* Haptic.swift in Sources */,
 				7194DDD61FCD74690078F118 /* ActionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

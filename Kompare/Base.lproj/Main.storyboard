@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -70,12 +71,35 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vzw-3F-PtP">
+                                <rect key="frame" x="39.666666666666657" y="670" width="295" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kp-6m-fj4">
+                                        <rect key="frame" x="0.0" y="0.0" width="137.66666666666666" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-3y-VjO">
+                                        <rect key="frame" x="194" y="0.0" width="101" height="29"/>
+                                        <segments>
+                                            <segment title="Black"/>
+                                            <segment title="White"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="backgroundColorSegmentControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="xqM-qw-W6m"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="4wu-l3-xlO"/>
                             <constraint firstItem="WSA-Ce-h9s" firstAttribute="leading" secondItem="fmk-Gl-VHQ" secondAttribute="leading" id="BIu-ay-wtO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vzw-3F-PtP" secondAttribute="bottom" constant="80" id="CoP-o8-Xmg"/>
                             <constraint firstItem="fmk-Gl-VHQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dtl-Rt-lXP"/>
+                            <constraint firstItem="Vzw-3F-PtP" firstAttribute="width" secondItem="fmk-Gl-VHQ" secondAttribute="width" id="HrT-lI-mxx"/>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="SBc-Ro-Iqk"/>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="ThZ-oc-xga">
                                 <variation key="widthClass=regular" constant="120"/>
@@ -83,12 +107,15 @@
                             <constraint firstItem="fmk-Gl-VHQ" firstAttribute="centerX" secondItem="S6N-bt-osv" secondAttribute="centerX" id="cTO-9k-ovF"/>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpd-35-OD0"/>
                             <constraint firstItem="WSA-Ce-h9s" firstAttribute="width" secondItem="fmk-Gl-VHQ" secondAttribute="width" id="ggj-42-LND"/>
+                            <constraint firstItem="Vzw-3F-PtP" firstAttribute="centerX" secondItem="fmk-Gl-VHQ" secondAttribute="centerX" id="hdJ-PA-lrS"/>
                             <constraint firstItem="fmk-Gl-VHQ" firstAttribute="width" secondItem="S6N-bt-osv" secondAttribute="width" id="k0u-ye-RVB"/>
+                            <constraint firstItem="Vzw-3F-PtP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fmk-Gl-VHQ" secondAttribute="bottom" constant="24" id="kMA-Qd-Fuh"/>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="leading" secondItem="fmk-Gl-VHQ" secondAttribute="leading" id="pD4-uX-jQ9"/>
                             <constraint firstItem="WSA-Ce-h9s" firstAttribute="top" secondItem="S6N-bt-osv" secondAttribute="bottom" constant="8" id="pY3-FX-QBT">
                                 <variation key="widthClass=regular" constant="24"/>
                             </constraint>
                             <constraint firstItem="WSA-Ce-h9s" firstAttribute="width" secondItem="S6N-bt-osv" secondAttribute="width" id="seW-Mp-n5t"/>
+                            <constraint firstItem="fmk-Gl-VHQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WSA-Ce-h9s" secondAttribute="bottom" constant="24" id="uQ5-OJ-SAq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S6N-bt-osv" secondAttribute="trailing" constant="40" id="wTm-5L-aTT"/>
                             <constraint firstItem="fmk-Gl-VHQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yIJ-2j-BOm"/>
                             <constraint firstItem="WSA-Ce-h9s" firstAttribute="centerX" secondItem="S6N-bt-osv" secondAttribute="centerX" id="yQ9-cg-wRq"/>

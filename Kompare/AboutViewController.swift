@@ -27,7 +27,13 @@ class AboutViewController: UIViewController {
         scrollView.contentInset.top = 0
     }
 
+    @IBAction func raypsdotcomButtonTapped(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "http://rayps.com")!)
+    }
+
     @IBAction func closeButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+
+
 }

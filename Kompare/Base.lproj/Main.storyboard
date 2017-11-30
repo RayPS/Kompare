@@ -11,6 +11,14 @@
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GeorgiaItalic.ttf">
+            <string>Georgia-Italic</string>
+        </array>
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -179,10 +187,10 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="1422"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Asu-nH-Blm" userLabel="Reviews">
-                                        <rect key="frame" x="40" y="501" width="295" height="502"/>
+                                        <rect key="frame" x="40" y="565" width="295" height="498"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6jJ-5W-EKE" userLabel="Review">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="63.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="62.666666666666664"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I took hungreds of selfies everyday, this app helped me alot!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suF-tQ-Z9Y" userLabel="Text">
                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="38.333333333333336"/>
@@ -191,17 +199,17 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="y7g-uC-uyI" userLabel="Rate + Name">
-                                                        <rect key="frame" x="0.0" y="46.333333333333371" width="295" height="17"/>
+                                                        <rect key="frame" x="0.0" y="46.333333333333371" width="295" height="16.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★★☆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JY-TB-iky">
-                                                                <rect key="frame" x="0.0" y="0.0" width="63.666666666666664" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="- John, Photographer" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D28-5F-miG">
-                                                                <rect key="frame" x="156.33333333333337" y="0.0" width="138.66666666666663" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="160.33333333333337" y="0.0" width="134.66666666666663" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -216,7 +224,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WvK-9e-Z9k" userLabel="Review">
-                                                <rect key="frame" x="0.0" y="95.333333333333371" width="295" height="63.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="94.666666666666629" width="295" height="62.666666666666657"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app is definitely making the world a better place." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyO-6k-isY" userLabel="Text">
                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="38.333333333333336"/>
@@ -225,17 +233,17 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-V3-poO" userLabel="Rate + Name">
-                                                        <rect key="frame" x="0.0" y="46.333333333333258" width="295" height="17"/>
+                                                        <rect key="frame" x="0.0" y="46.333333333333371" width="295" height="16.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★★☆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2y-QI-wkK">
-                                                                <rect key="frame" x="0.0" y="0.0" width="63.666666666666664" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="- David, Business Man" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYc-J2-xmh">
-                                                                <rect key="frame" x="151" y="0.0" width="144" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="154" y="0.0" width="141" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -250,7 +258,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Sla-5i-ELO" userLabel="Review">
-                                                <rect key="frame" x="0.0" y="190.66666666666663" width="295" height="44.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="189.33333333333337" width="295" height="43.666666666666657"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not for me but...Cool!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46p-YX-6cy" userLabel="Text">
                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="19.333333333333332"/>
@@ -259,17 +267,17 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="SnW-U0-tMb" userLabel="Rate + Name">
-                                                        <rect key="frame" x="0.0" y="27.333333333333371" width="295" height="17"/>
+                                                        <rect key="frame" x="0.0" y="27.333333333333258" width="295" height="16.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★☆☆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR8-Hi-MHR">
-                                                                <rect key="frame" x="0.0" y="0.0" width="65.666666666666671" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="- Michael, Writer" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3F-bR-KYy">
-                                                                <rect key="frame" x="187.33333333333334" y="0.0" width="107.66666666666666" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="187" y="0.0" width="108" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -284,7 +292,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G5N-92-OQu" userLabel="Review">
-                                                <rect key="frame" x="0.0" y="267" width="295" height="44.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="265" width="295" height="43.666666666666686"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leave me alone." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIH-b5-ScZ" userLabel="Text">
                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="19.333333333333332"/>
@@ -293,17 +301,17 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="DOM-oc-268" userLabel="Rate + Name">
-                                                        <rect key="frame" x="0.0" y="27.333333333333371" width="295" height="17"/>
+                                                        <rect key="frame" x="0.0" y="27.333333333333371" width="295" height="16.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☆☆☆☆☆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H00-r5-HHA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="- Iris, Ray's Ex-girlfriend" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIe-DW-RmT">
-                                                                <rect key="frame" x="140" y="0.0" width="155" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="136.66666666666663" y="0.0" width="158.33333333333337" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -318,7 +326,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-jG-u71" userLabel="Review">
-                                                <rect key="frame" x="0.0" y="343.33333333333337" width="295" height="63.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="340.66666666666663" width="295" height="62.666666666666686"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not really understand this thing but i'm kinda like it." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyF-WB-w37" userLabel="Text">
                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="38.333333333333336"/>
@@ -327,17 +335,17 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="NRI-Cw-CxC" userLabel="Rate + Name">
-                                                        <rect key="frame" x="0.0" y="46.333333333333258" width="295" height="17"/>
+                                                        <rect key="frame" x="0.0" y="46.333333333333371" width="295" height="16.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★★★" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5X-jg-Whl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="61.666666666666664" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="- Jessie, Ray's Grandma" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVQ-z5-0MD">
-                                                                <rect key="frame" x="139" y="0.0" width="156" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="143" y="0.0" width="152" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -352,7 +360,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A3R-Ls-toj" userLabel="Review">
-                                                <rect key="frame" x="0.0" y="438.66666666666663" width="295" height="63.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="435.33333333333326" width="295" height="62.666666666666686"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can you replace your picture here to my little puppy?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqD-ud-rhN" userLabel="Text">
                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="38.333333333333336"/>
@@ -361,17 +369,17 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8WR-Ms-t8c" userLabel="Rate + Name">
-                                                        <rect key="frame" x="0.0" y="46.333333333333371" width="295" height="17"/>
+                                                        <rect key="frame" x="0.0" y="46.333333333333485" width="295" height="16.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★☆☆☆☆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm4-Uw-fhX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="- Fiona, Ray's Sister" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4E-uF-cO6">
-                                                                <rect key="frame" x="166.66666666666663" y="0.0" width="128.33333333333337" height="17"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="168.66666666666666" y="0.0" width="126.33333333333334" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="14"/>
                                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -388,7 +396,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7A-IE-FCZ">
-                                        <rect key="frame" x="40" y="437" width="94" height="40"/>
+                                        <rect key="frame" x="40" y="501" width="94" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="SwJ-cK-SAu">
                                                 <variation key="widthClass=regular" constant="64"/>
@@ -399,7 +407,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made with ⌨️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="JWf-G9-6qj">
-                                        <rect key="frame" x="39.999999999999993" y="373" width="102.33333333333331" height="24"/>
+                                        <rect key="frame" x="39.999999999999993" y="397" width="102.33333333333331" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="qqe-Kq-n9h"/>
                                         </constraints>
@@ -407,8 +415,8 @@
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kompare is an Photo Action Extension to let you compare photos without slide animations." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hm-lL-80v">
-                                        <rect key="frame" x="40" y="288" width="295" height="61"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kompare is an Photo Action Extension to let you compare photos without slide animations." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hm-lL-80v">
+                                        <rect key="frame" x="40" y="312" width="295" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -440,11 +448,25 @@
                                             <constraint firstAttribute="width" secondItem="JHP-4x-0TZ" secondAttribute="height" multiplier="1:1" id="ywU-79-bSW"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtd-0T-EuW">
+                                        <rect key="frame" x="40" y="248" width="200" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="3uq-pL-hlv"/>
+                                            <constraint firstAttribute="height" constant="40" id="I0w-nj-m0a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="http://rayps.com  ›"/>
+                                        <connections>
+                                            <action selector="raypsdotcomButtonTapped:" destination="BWn-j5-hI8" eventType="touchUpInside" id="EKO-zM-Q3C"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Asu-nH-Blm" firstAttribute="leading" secondItem="f4c-JH-WpM" secondAttribute="leading" constant="40" id="1rH-5P-bTC"/>
-                                    <constraint firstItem="U7A-IE-FCZ" firstAttribute="top" secondItem="JWf-G9-6qj" secondAttribute="bottom" constant="40" id="3wx-8u-szK"/>
+                                    <constraint firstItem="qtd-0T-EuW" firstAttribute="leading" secondItem="ciz-ub-gmp" secondAttribute="leading" id="3lv-Bn-s7g"/>
+                                    <constraint firstItem="U7A-IE-FCZ" firstAttribute="top" secondItem="JWf-G9-6qj" secondAttribute="bottom" constant="80" id="3wx-8u-szK"/>
                                     <constraint firstItem="tH2-7I-IaY" firstAttribute="top" secondItem="ciz-ub-gmp" secondAttribute="bottom" constant="8" id="8qI-8D-fNb"/>
+                                    <constraint firstItem="qtd-0T-EuW" firstAttribute="top" secondItem="tH2-7I-IaY" secondAttribute="bottom" id="Hfy-XM-gdT"/>
                                     <constraint firstItem="ciz-ub-gmp" firstAttribute="top" secondItem="JHP-4x-0TZ" secondAttribute="bottom" constant="16" id="Jki-Hr-RJj"/>
                                     <constraint firstItem="U7A-IE-FCZ" firstAttribute="leading" secondItem="ciz-ub-gmp" secondAttribute="leading" id="Ok2-5E-sXa"/>
                                     <constraint firstItem="1Hm-lL-80v" firstAttribute="leading" secondItem="ciz-ub-gmp" secondAttribute="leading" id="OyQ-mb-xBK"/>
@@ -460,7 +482,7 @@
                                     <constraint firstItem="uK4-FN-Jbf" firstAttribute="trailing" secondItem="1Hm-lL-80v" secondAttribute="trailing" constant="40" id="tn1-YB-1dT"/>
                                     <constraint firstItem="JWf-G9-6qj" firstAttribute="top" secondItem="1Hm-lL-80v" secondAttribute="bottom" constant="24" id="uJt-9p-vLe"/>
                                     <constraint firstItem="JWf-G9-6qj" firstAttribute="leading" secondItem="ciz-ub-gmp" secondAttribute="leading" id="w5o-EL-tFH"/>
-                                    <constraint firstItem="1Hm-lL-80v" firstAttribute="top" secondItem="tH2-7I-IaY" secondAttribute="bottom" constant="40" id="zVD-nm-wQz"/>
+                                    <constraint firstItem="1Hm-lL-80v" firstAttribute="top" secondItem="qtd-0T-EuW" secondAttribute="bottom" constant="24" id="z4i-M3-UVs"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="uK4-FN-Jbf"/>
                             </scrollView>

@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,7 +34,9 @@
                                     <constraint firstAttribute="height" constant="40" id="B2g-rL-TTP">
                                         <variation key="widthClass=regular" constant="64"/>
                                     </constraint>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="rXP-vk-6PU"/>
+                                    <constraint firstAttribute="width" constant="414" id="rXP-vk-6PU">
+                                        <variation key="widthClass=regular" constant="400"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
@@ -82,7 +83,7 @@
                                 </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vzw-3F-PtP">
-                                <rect key="frame" x="39.666666666666657" y="670" width="295" height="28"/>
+                                <rect key="frame" x="39.666666666666657" y="710" width="295" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kp-6m-fj4">
                                         <rect key="frame" x="0.0" y="0.0" width="137.66666666666666" height="28"/>
@@ -114,14 +115,43 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aB0-ve-Vbm">
+                                <rect key="frame" x="39.666666666666657" y="605" width="295" height="65"/>
+                                <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BXE-QP-KTu">
+                                        <variation key="widthClass=regular" constant="48"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="24" maxX="8" maxY="24"/>
+                                <state key="normal" title="To use Kompare, select two or more photos in Photos app, then tap the share icon, finally tap the Kompare action.">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BXE-QP-KTu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="BXE-QP-KTu"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="aB0-ve-Vbm" firstAttribute="width" secondItem="S6N-bt-osv" secondAttribute="width" id="1xo-RE-XMq"/>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="4wu-l3-xlO"/>
                             <constraint firstItem="WSA-Ce-h9s" firstAttribute="leading" secondItem="fmk-Gl-VHQ" secondAttribute="leading" id="BIu-ay-wtO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vzw-3F-PtP" secondAttribute="bottom" constant="80" id="CoP-o8-Xmg"/>
+                            <constraint firstItem="aB0-ve-Vbm" firstAttribute="centerX" secondItem="fmk-Gl-VHQ" secondAttribute="centerX" id="CX5-ey-i0k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vzw-3F-PtP" secondAttribute="bottom" constant="40" id="CoP-o8-Xmg">
+                                <variation key="widthClass=regular" constant="80"/>
+                            </constraint>
                             <constraint firstItem="fmk-Gl-VHQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dtl-Rt-lXP"/>
                             <constraint firstItem="Vzw-3F-PtP" firstAttribute="width" secondItem="fmk-Gl-VHQ" secondAttribute="width" id="HrT-lI-mxx"/>
+                            <constraint firstItem="aB0-ve-Vbm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fmk-Gl-VHQ" secondAttribute="bottom" constant="40" id="LPG-Vj-8KU"/>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="SBc-Ro-Iqk"/>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="ThZ-oc-xga">
                                 <variation key="widthClass=regular" constant="120"/>
@@ -129,10 +159,12 @@
                             <constraint firstItem="fmk-Gl-VHQ" firstAttribute="centerX" secondItem="S6N-bt-osv" secondAttribute="centerX" id="cTO-9k-ovF"/>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpd-35-OD0"/>
                             <constraint firstItem="v93-3f-3vo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="24" id="e5S-Ko-bH3"/>
+                            <constraint firstItem="Vzw-3F-PtP" firstAttribute="top" secondItem="aB0-ve-Vbm" secondAttribute="bottom" constant="40" id="fH2-gE-EoZ">
+                                <variation key="widthClass=regular" constant="80"/>
+                            </constraint>
                             <constraint firstItem="WSA-Ce-h9s" firstAttribute="width" secondItem="fmk-Gl-VHQ" secondAttribute="width" id="ggj-42-LND"/>
                             <constraint firstItem="Vzw-3F-PtP" firstAttribute="centerX" secondItem="fmk-Gl-VHQ" secondAttribute="centerX" id="hdJ-PA-lrS"/>
                             <constraint firstItem="fmk-Gl-VHQ" firstAttribute="width" secondItem="S6N-bt-osv" secondAttribute="width" id="k0u-ye-RVB"/>
-                            <constraint firstItem="Vzw-3F-PtP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fmk-Gl-VHQ" secondAttribute="bottom" constant="24" id="kMA-Qd-Fuh"/>
                             <constraint firstItem="S6N-bt-osv" firstAttribute="leading" secondItem="fmk-Gl-VHQ" secondAttribute="leading" id="pD4-uX-jQ9"/>
                             <constraint firstItem="WSA-Ce-h9s" firstAttribute="top" secondItem="S6N-bt-osv" secondAttribute="bottom" constant="8" id="pY3-FX-QBT">
                                 <variation key="widthClass=regular" constant="24"/>
@@ -170,11 +202,12 @@
                     <connections>
                         <outlet property="aboutButton" destination="v93-3f-3vo" id="If2-Ef-mjW"/>
                         <outlet property="backgroundColorSegmentControl" destination="HMp-3y-VjO" id="T8j-MN-9Av"/>
+                        <outlet property="howtoButton" destination="aB0-ve-Vbm" id="Bhn-vZ-ZXO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="wLj-aT-TGC">
@@ -463,7 +496,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vff-Wf-Yhx">
                                         <rect key="frame" x="80" y="1143" width="215" height="40"/>
-                                        <color key="backgroundColor" name="iOS_Blue"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="GfS-P6-kaE"/>
                                         </constraints>
@@ -517,12 +550,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="IvP-2E-QsF" firstAttribute="top" secondItem="XB8-8N-19h" secondAttribute="top" constant="-20" id="0Rp-jD-fxx"/>
                             <constraint firstItem="XB8-8N-19h" firstAttribute="bottom" secondItem="f4c-JH-WpM" secondAttribute="bottom" id="Jw6-di-nSY"/>
                             <constraint firstAttribute="trailing" secondItem="f4c-JH-WpM" secondAttribute="trailing" id="NJw-PE-L0p"/>
                             <constraint firstAttribute="trailing" secondItem="IvP-2E-QsF" secondAttribute="trailing" id="NvQ-z4-0gT"/>
                             <constraint firstItem="f4c-JH-WpM" firstAttribute="leading" secondItem="YEn-aO-UzC" secondAttribute="leading" id="OVH-fl-Gf1"/>
                             <constraint firstItem="f4c-JH-WpM" firstAttribute="top" secondItem="XB8-8N-19h" secondAttribute="top" id="dvM-iF-Wbq"/>
+                            <constraint firstItem="IvP-2E-QsF" firstAttribute="top" secondItem="YEn-aO-UzC" secondAttribute="top" constant="24" id="n2N-Yz-lQu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XB8-8N-19h"/>
                     </view>
@@ -543,8 +576,5 @@
         <image name="Close_dark" width="32" height="32"/>
         <image name="Ray" width="400" height="400"/>
         <image name="Steps" width="295" height="216"/>
-        <namedColor name="iOS_Blue">
-            <color red="0.0" green="0.47799998519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>

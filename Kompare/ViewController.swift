@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var backgroundColorSegmentControl: UISegmentedControl!
     @IBOutlet weak var aboutButton: UIButton!
+    @IBOutlet weak var howtoButton: UIButton!
 
     var userDefaults = UserDefaults(suiteName: "group.Kompare")
 
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
         if let backgroundColor = userDefaults?.value(forKey: "backgroundColor") {
             backgroundColorSegmentControl.selectedSegmentIndex = backgroundColor as! Int
         }
+        howtoButton.layer.cornerRadius = 8
+        howtoButton.clipsToBounds = true
     }
 
     @IBAction func backgroundColorSegmentControlChanged(_ sender: UISegmentedControl) {
@@ -29,8 +32,9 @@ class ViewController: UIViewController {
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let popoverVC = segue.destination.popoverPresentationController
         if segue.identifier == "PresentAboutPopover" {
-            segue.destination.popoverPresentationController?.sourceRect = aboutButton.bounds
+            popoverVC?.sourceRect = aboutButton.bounds
         }
     }
 

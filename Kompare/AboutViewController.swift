@@ -29,6 +29,11 @@ class AboutViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         scrollView.contentInset.top = 0
+
+        let isPopover = view.superview!.bounds != UIScreen.main.bounds
+        if isPopover {
+            closeButton.isHidden = true
+        }
     }
 
     @IBAction func raypsdotcomButtonTapped(_ sender: Any) {

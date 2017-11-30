@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -460,31 +461,44 @@
                                             <action selector="raypsdotcomButtonTapped:" destination="BWn-j5-hI8" eventType="touchUpInside" id="EKO-zM-Q3C"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vff-Wf-Yhx">
+                                        <rect key="frame" x="80" y="1103" width="215" height="32"/>
+                                        <color key="backgroundColor" name="iOS_Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="GfS-P6-kaE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Rate this App">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Asu-nH-Blm" firstAttribute="leading" secondItem="f4c-JH-WpM" secondAttribute="leading" constant="40" id="1rH-5P-bTC"/>
                                     <constraint firstItem="qtd-0T-EuW" firstAttribute="leading" secondItem="ciz-ub-gmp" secondAttribute="leading" id="3lv-Bn-s7g"/>
                                     <constraint firstItem="U7A-IE-FCZ" firstAttribute="top" secondItem="JWf-G9-6qj" secondAttribute="bottom" constant="80" id="3wx-8u-szK"/>
+                                    <constraint firstAttribute="bottom" secondItem="vff-Wf-Yhx" secondAttribute="bottom" constant="80" id="8qE-Sb-Lb2"/>
                                     <constraint firstItem="tH2-7I-IaY" firstAttribute="top" secondItem="ciz-ub-gmp" secondAttribute="bottom" constant="8" id="8qI-8D-fNb"/>
                                     <constraint firstItem="qtd-0T-EuW" firstAttribute="top" secondItem="tH2-7I-IaY" secondAttribute="bottom" id="Hfy-XM-gdT"/>
                                     <constraint firstItem="ciz-ub-gmp" firstAttribute="top" secondItem="JHP-4x-0TZ" secondAttribute="bottom" constant="16" id="Jki-Hr-RJj"/>
                                     <constraint firstItem="U7A-IE-FCZ" firstAttribute="leading" secondItem="ciz-ub-gmp" secondAttribute="leading" id="Ok2-5E-sXa"/>
                                     <constraint firstItem="1Hm-lL-80v" firstAttribute="leading" secondItem="ciz-ub-gmp" secondAttribute="leading" id="OyQ-mb-xBK"/>
-                                    <constraint firstAttribute="trailing" secondItem="JHP-4x-0TZ" secondAttribute="trailing" constant="195" id="RNQ-ph-UV9"/>
+                                    <constraint firstItem="vff-Wf-Yhx" firstAttribute="leading" secondItem="f4c-JH-WpM" secondAttribute="leading" constant="80" id="Ps4-Gt-4Q2"/>
+                                    <constraint firstAttribute="trailing" secondItem="JHP-4x-0TZ" secondAttribute="trailing" constant="215" id="RNQ-ph-UV9"/>
                                     <constraint firstItem="ciz-ub-gmp" firstAttribute="leading" secondItem="JHP-4x-0TZ" secondAttribute="leading" id="Sfb-iI-l4H"/>
-                                    <constraint firstItem="uK4-FN-Jbf" firstAttribute="trailing" secondItem="Asu-nH-Blm" secondAttribute="trailing" constant="40" id="TEj-F9-fKt"/>
-                                    <constraint firstAttribute="bottom" secondItem="Asu-nH-Blm" secondAttribute="bottom" constant="40" id="Zel-Ku-EK3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Asu-nH-Blm" secondAttribute="trailing" constant="40" id="TEj-F9-fKt"/>
                                     <constraint firstItem="tH2-7I-IaY" firstAttribute="width" secondItem="ciz-ub-gmp" secondAttribute="width" id="bEH-7w-kIX"/>
                                     <constraint firstItem="JHP-4x-0TZ" firstAttribute="leading" secondItem="f4c-JH-WpM" secondAttribute="leading" constant="40" id="bRN-Ml-gKx"/>
+                                    <constraint firstAttribute="trailing" secondItem="vff-Wf-Yhx" secondAttribute="trailing" constant="80" id="e7b-Ez-UYN"/>
                                     <constraint firstItem="tH2-7I-IaY" firstAttribute="leading" secondItem="ciz-ub-gmp" secondAttribute="leading" id="fac-Ss-tSe"/>
                                     <constraint firstItem="JHP-4x-0TZ" firstAttribute="top" secondItem="f4c-JH-WpM" secondAttribute="top" constant="40" id="qzG-ET-fyX"/>
                                     <constraint firstItem="Asu-nH-Blm" firstAttribute="top" secondItem="U7A-IE-FCZ" secondAttribute="bottom" constant="24" id="tdj-Xi-bL4"/>
-                                    <constraint firstItem="uK4-FN-Jbf" firstAttribute="trailing" secondItem="1Hm-lL-80v" secondAttribute="trailing" constant="40" id="tn1-YB-1dT"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Hm-lL-80v" secondAttribute="trailing" constant="40" id="tn1-YB-1dT"/>
                                     <constraint firstItem="JWf-G9-6qj" firstAttribute="top" secondItem="1Hm-lL-80v" secondAttribute="bottom" constant="24" id="uJt-9p-vLe"/>
+                                    <constraint firstItem="vff-Wf-Yhx" firstAttribute="top" secondItem="Asu-nH-Blm" secondAttribute="bottom" constant="40" id="vX9-d6-Kh6"/>
                                     <constraint firstItem="JWf-G9-6qj" firstAttribute="leading" secondItem="ciz-ub-gmp" secondAttribute="leading" id="w5o-EL-tFH"/>
                                     <constraint firstItem="1Hm-lL-80v" firstAttribute="top" secondItem="qtd-0T-EuW" secondAttribute="bottom" constant="24" id="z4i-M3-UVs"/>
                                 </constraints>
-                                <viewLayoutGuide key="safeArea" id="uK4-FN-Jbf"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvP-2E-QsF">
                                 <rect key="frame" x="295" y="24" width="80" height="80"/>
@@ -525,5 +539,8 @@
         <image name="Close_dark" width="32" height="32"/>
         <image name="Ray" width="400" height="400"/>
         <image name="Steps" width="295" height="216"/>
+        <namedColor name="iOS_Blue">
+            <color red="0.0" green="0.47799998519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

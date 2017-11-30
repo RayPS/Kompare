@@ -36,6 +36,10 @@ class AboutViewController: UIViewController {
         }
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        scrollView.clipsToBounds = true
+    }
+
     @IBAction func raypsdotcomButtonTapped(_ sender: Any) {
         UIApplication.shared.open(URL(string: "http://rayps.com")!)
     }

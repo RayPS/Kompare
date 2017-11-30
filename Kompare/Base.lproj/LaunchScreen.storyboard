@@ -17,60 +17,8 @@
                     <view key="view" contentMode="scaleToFill" id="OnV-B2-0cB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kompare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hc-96-6yP">
-                                <rect key="frame" x="40.5" y="100" width="295" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="295" id="PCV-VN-h5s"/>
-                                    <constraint firstAttribute="height" constant="32" id="chP-Mf-pjc">
-                                        <variation key="widthClass=regular" constant="64"/>
-                                    </constraint>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=regular">
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transition-less photo comparison" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-xE-onr">
-                                <rect key="frame" x="40" y="140" width="295" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="C8U-OG-eCB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                </variation>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="tKg-xE-onr" firstAttribute="width" secondItem="5Hc-96-6yP" secondAttribute="width" id="9ay-ta-MzK"/>
-                            <constraint firstItem="5Hc-96-6yP" firstAttribute="top" secondItem="Z4i-4m-CeQ" secondAttribute="top" constant="80" id="adS-YI-5b0">
-                                <variation key="widthClass=regular" constant="120"/>
-                            </constraint>
-                            <constraint firstItem="tKg-xE-onr" firstAttribute="centerX" secondItem="5Hc-96-6yP" secondAttribute="centerX" id="eLY-9S-sNo"/>
-                            <constraint firstItem="tKg-xE-onr" firstAttribute="top" secondItem="5Hc-96-6yP" secondAttribute="bottom" constant="8" id="lua-5w-lPT">
-                                <variation key="widthClass=regular" constant="24"/>
-                            </constraint>
-                            <constraint firstItem="5Hc-96-6yP" firstAttribute="top" secondItem="Z4i-4m-CeQ" secondAttribute="top" constant="80" id="sMz-tg-INC"/>
-                            <constraint firstItem="5Hc-96-6yP" firstAttribute="centerX" secondItem="OnV-B2-0cB" secondAttribute="centerX" id="vWQ-Aa-5q4"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Z4i-4m-CeQ"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="adS-YI-5b0"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="adS-YI-5b0"/>
-                                <exclude reference="sMz-tg-INC"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Bj-D8-XJc" sceneMemberID="firstResponder"/>

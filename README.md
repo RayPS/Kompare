@@ -10,6 +10,6 @@ Supported Devices: Universal (iOS 10+)
 Download: <https://itunes.apple.com/us/app/kompare-extension/id1319100146?ls=1&mt=8>
 
 
-<img src= "https://github.com/RayPS/Kompare/blob/master/Kompare/screenshot.jpeg?raw=true" width="562"> 
+<img src= "https://raw.githubusercontent.com/RayPS/Kompare/master/screenshot.jpeg" width="562"> 
 
-<img src= "https://github.com/RayPS/Kompare/blob/master/Kompare/screenshot2.jpeg?raw=true" width="562"> 
+<img src= "https://raw.githubusercontent.com/RayPS/Kompare/master/screenshot2.jpg" width="562"> 

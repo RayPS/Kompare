@@ -31,6 +31,8 @@ class ActionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        preferredContentSize = UIScreen.main.bounds.size
+
         queue.addObserver(self, forKeyPath: "operations", options: .new, context: nil)
 
         let extensionItems = (self.extensionContext!.inputItems as! [NSExtensionItem]).first!

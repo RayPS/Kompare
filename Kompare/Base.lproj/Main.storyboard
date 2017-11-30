@@ -462,15 +462,18 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vff-Wf-Yhx">
-                                        <rect key="frame" x="80" y="1103" width="215" height="32"/>
+                                        <rect key="frame" x="80" y="1103" width="215" height="40"/>
                                         <color key="backgroundColor" name="iOS_Blue"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="GfS-P6-kaE"/>
+                                            <constraint firstAttribute="height" constant="40" id="GfS-P6-kaE"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Rate this App">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rateButtonTapped:" destination="BWn-j5-hI8" eventType="touchUpInside" id="BsQ-Po-Tfm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -527,6 +530,7 @@
                     <connections>
                         <outlet property="avatarImageView" destination="JHP-4x-0TZ" id="Ecc-d8-O9P"/>
                         <outlet property="closeButton" destination="IvP-2E-QsF" id="MB4-pF-07P"/>
+                        <outlet property="rateButton" destination="vff-Wf-Yhx" id="Mh1-Qt-GYN"/>
                         <outlet property="scrollView" destination="f4c-JH-WpM" id="zqk-3p-ayz"/>
                     </connections>
                 </viewController>

@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import StoreKit
 
 class AboutViewController: UIViewController {
 
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var rateButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,8 @@ class AboutViewController: UIViewController {
         avatarImageView.clipsToBounds = true
         scrollView.contentInsetAdjustmentBehavior = .never
         scrollView.clipsToBounds = false
+        rateButton.layer.cornerRadius = 8
+        rateButton.clipsToBounds = true
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -29,6 +33,10 @@ class AboutViewController: UIViewController {
 
     @IBAction func raypsdotcomButtonTapped(_ sender: Any) {
         UIApplication.shared.open(URL(string: "http://rayps.com")!)
+    }
+
+    @IBAction func rateButtonTapped(_ sender: UIButton) {
+        SKStoreReviewController.requestReview()
     }
 
     @IBAction func closeButtonTapped(_ sender: Any) {

@@ -25,6 +25,7 @@ class AboutViewController: UIViewController {
         scrollView.clipsToBounds = false
         rateButton.layer.cornerRadius = 8
         rateButton.clipsToBounds = true
+        preferredContentSize = CGSize(width: 375, height: 667)
     }
 
     override func viewDidAppear(_ animated: Bool) {

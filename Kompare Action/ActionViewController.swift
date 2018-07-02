@@ -55,7 +55,7 @@ class ActionViewController: UIViewController {
             let colorIndex = backgroundColor as! Int
             if colorIndex == 1 {
                 view.backgroundColor = .white
-                closeButton.setImage(#imageLiteral(resourceName: "Close_dark"), for: .normal)
+                closeButton.setImage(#imageLiteral(resourceName: "Close_dark"), for: UIControl.State.normal)
                 indexLabel.textColor = .black
             }
         }
@@ -99,7 +99,7 @@ class ActionViewController: UIViewController {
                     delay: 0,
                     usingSpringWithDamping: 0.5,
                     initialSpringVelocity: 0.0,
-                    options: [.allowUserInteraction],
+                    options: [UIView.AnimationOptions.allowUserInteraction],
                     animations: {
                         self.imageView.transform = CGAffineTransform(translationX: 0, y: 0)
                     },

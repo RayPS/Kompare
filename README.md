@@ -11,4 +11,4 @@ Supported Devices: Universal (iOS 10+)
 [![Download on the App Store](https://cdn.rawgit.com/RayPS/Dummy-Repos/master/readme-assets/app-store/ios_black.svg)](https://itunes.apple.com/us/app/kompare-extension/id1319100146?ls=1&mt=8)
 
 
-<img src= "https://raw.githubusercontent.com/RayPS/Kompare/master/screenshot.jpeg" width="375px""> 
+<img src="https://raw.githubusercontent.com/RayPS/Kompare/master/screenshot.jpeg" width="375px"> 

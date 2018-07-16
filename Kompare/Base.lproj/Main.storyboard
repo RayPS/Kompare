@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="GeorgiaItalic.ttf">
-            <string>Georgia-Italic</string>
-        </array>
-        <array key="Helvetica.ttc">
-            <string>Helvetica</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -54,7 +45,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transition-less photo comparison" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="WSA-Ce-h9s">
-                                <rect key="frame" x="39.666666666666657" y="172" width="295" height="24"/>
+                                <rect key="frame" x="40" y="172" width="295" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="6Rw-TP-hz6"/>
                                 </constraints>
@@ -66,7 +57,7 @@
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Steps" translatesAutoresizingMaskIntoConstraints="NO" id="fmk-Gl-VHQ" userLabel="Steps">
-                                <rect key="frame" x="39.666666666666657" y="298" width="295" height="216"/>
+                                <rect key="frame" x="40" y="298" width="295" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="HSO-2m-VHz"/>
                                     <constraint firstAttribute="width" constant="414" id="oxL-Yt-N2z"/>
@@ -83,7 +74,7 @@
                                 </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vzw-3F-PtP">
-                                <rect key="frame" x="39.666666666666657" y="710" width="295" height="28"/>
+                                <rect key="frame" x="40" y="710" width="295" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kp-6m-fj4">
                                         <rect key="frame" x="0.0" y="0.0" width="137.66666666666666" height="28"/>
@@ -116,7 +107,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aB0-ve-Vbm">
-                                <rect key="frame" x="39.666666666666657" y="605" width="295" height="65"/>
+                                <rect key="frame" x="40" y="605" width="295" height="65"/>
                                 <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BXE-QP-KTu">
@@ -125,7 +116,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <inset key="contentEdgeInsets" minX="8" minY="24" maxX="8" maxY="24"/>
-                                <state key="normal" title="To use Kompare, select two or more photos in Photos app, then tap the share icon, finally tap the Kompare action.">
+                                <state key="normal" title="To use Kompare, select two or more photos in Photos app (up to 9), tap the share icon then tap the Kompare action.">
                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
                                 <variation key="default">

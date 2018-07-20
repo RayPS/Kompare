@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711DE68D2101F10900C2967A /* ZoomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DE68C2101F10900C2967A /* ZoomImageView.swift */; };
 		7194DDAB1FCD6DD30078F118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDAA1FCD6DD30078F118 /* AppDelegate.swift */; };
 		7194DDAD1FCD6DD30078F118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194DDAC1FCD6DD30078F118 /* ViewController.swift */; };
 		7194DDB01FCD6DD30078F118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7194DDAE1FCD6DD30078F118 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		711DE68C2101F10900C2967A /* ZoomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImageView.swift; sourceTree = "<group>"; };
 		7194DDA71FCD6DD30078F118 /* Kompare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kompare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7194DDAA1FCD6DD30078F118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7194DDAC1FCD6DD30078F118 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				71F021051FCF4532001B446C /* Kompare Action.entitlements */,
 				7194DDD51FCD74690078F118 /* ActionViewController.swift */,
 				7194DDD71FCD74690078F118 /* MainInterface.storyboard */,
+				711DE68C2101F10900C2967A /* ZoomImageView.swift */,
 				7194DDDA1FCD74690078F118 /* Info.plist */,
 				7194DDE81FCE76580078F118 /* Haptic.swift */,
 			);
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7194DDE91FCE76580078F118 /* Haptic.swift in Sources */,
+				711DE68D2101F10900C2967A /* ZoomImageView.swift in Sources */,
 				7194DDD61FCD74690078F118 /* ActionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

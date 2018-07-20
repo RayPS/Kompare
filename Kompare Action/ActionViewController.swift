@@ -9,11 +9,13 @@
 import UIKit
 import MobileCoreServices
 
-class ActionViewController: UIViewController {
+class ActionViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var closeButton: UIButton!
-    @IBOutlet weak var imageView: UIImageView!
+//    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var indexLabel: UILabel!
+    @IBOutlet weak var imageView: ZoomImageView!
+    @IBOutlet var panGesture: UIPanGestureRecognizer!
 
     var userDefaults = UserDefaults(suiteName: "group.Kompare")
     let queue = OperationQueue.main
@@ -32,6 +34,7 @@ class ActionViewController: UIViewController {
         super.viewDidLoad()
 
         preferredContentSize = UIScreen.main.bounds.size
+        panGesture.delegate = self
 
         queue.addObserver(self, forKeyPath: "operations", options: .new, context: nil)
 
@@ -98,42 +101,49 @@ class ActionViewController: UIViewController {
 
     var triggerPointDidFeedback = false
 
-    @IBAction func imageViewDidPan(_ sender: UIPanGestureRecognizer) {
-        let translation = sender.translation(in: view)
-        imageView.transform = CGAffineTransform(translationX: 0, y: translation.y)
-        let triggerPoint: CGFloat = 100.0
-
-        switch sender.state {
-        case .changed:
-            let scale = abs(translation.y).modulate(from: [0, triggerPoint], to: [1, 1.5], limit: true)
-
-            self.closeButton.transform = CGAffineTransform(scaleX: scale, y: scale)
-
-            if abs(translation.y) >= triggerPoint {
-                if !triggerPointDidFeedback {
-                    Haptic.impact(.light).generate()
-                    triggerPointDidFeedback = true
-                }
-            } else {
-                triggerPointDidFeedback = false
-            }
-        case .ended:
-            if abs(translation.y) >= triggerPoint {
-                done()
-            } else {
-                animate {
-                    self.imageView.transform = CGAffineTransform.identity
-                    self.closeButton.transform = CGAffineTransform.identity
-                }
-            }
-
-        default:
-            break
-        }
-
-
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
 
+    @IBAction func imageViewDidPan(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: view)
+        let triggerPoint: CGFloat = 100.0
+
+        if imageView.zoomScale == 1.0 {
+            switch sender.state {
+            case .changed:
+
+                imageView.transform = CGAffineTransform(translationX: 0, y: translation.y)
+
+                let scale = abs(translation.y).modulate(from: [0, triggerPoint], to: [1, 1.5], limit: true)
+
+                self.closeButton.transform = CGAffineTransform(scaleX: scale, y: scale)
+
+                if abs(translation.y) >= triggerPoint {
+                    if !triggerPointDidFeedback {
+                        Haptic.impact(.light).generate()
+                        triggerPointDidFeedback = true
+                    }
+                } else {
+                    triggerPointDidFeedback = false
+                }
+
+            case .ended:
+
+                if abs(translation.y) >= triggerPoint {
+                    done()
+                } else {
+                    animate {
+                        self.imageView.transform = CGAffineTransform.identity
+                        self.closeButton.transform = CGAffineTransform.identity
+                    }
+                }
+
+            default:
+                break
+            }
+        }
+    }
 
     @IBAction func done() {
         self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)

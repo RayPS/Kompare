@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ga-4F-77Z">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRU-Wy-MVh" customClass="ZoomImageView" customModule="Kompare_Action" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="MjC-xc-Btf" appends="YES" id="RJW-0L-PZI"/>
-                                    <outletCollection property="gestureRecognizers" destination="ZVL-kh-9X3" appends="YES" id="OWE-VD-SvL"/>
+                                    <outletCollection property="gestureRecognizers" destination="JSI-IS-5NI" appends="YES" id="w7s-yG-FSJ"/>
+                                    <outletCollection property="gestureRecognizers" destination="cqM-KB-ovc" appends="YES" id="Nne-Os-RLh"/>
                                 </connections>
-                            </imageView>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGJ-Ci-neT">
                                 <rect key="frame" x="295" y="0.0" width="80" height="80"/>
                                 <constraints>
@@ -50,34 +50,35 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="VVe-Uw-JpX" firstAttribute="trailing" secondItem="KRU-Wy-MVh" secondAttribute="trailing" id="1ba-ec-jN2"/>
                             <constraint firstItem="HGJ-Ci-neT" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="BqT-Iq-TNJ"/>
-                            <constraint firstAttribute="trailing" secondItem="9ga-4F-77Z" secondAttribute="trailing" id="ZMv-Gk-wgU"/>
-                            <constraint firstAttribute="bottom" secondItem="9ga-4F-77Z" secondAttribute="bottom" id="aVY-7m-dRx"/>
+                            <constraint firstItem="KRU-Wy-MVh" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="N8n-Wc-xdN"/>
                             <constraint firstItem="ZBs-29-nhq" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="dyu-XY-KAI"/>
                             <constraint firstAttribute="trailing" secondItem="HGJ-Ci-neT" secondAttribute="trailing" id="jeg-gS-WE5"/>
-                            <constraint firstItem="9ga-4F-77Z" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="kuy-fq-Tmo"/>
-                            <constraint firstItem="9ga-4F-77Z" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="lE4-Dl-Q2n"/>
+                            <constraint firstAttribute="bottom" secondItem="KRU-Wy-MVh" secondAttribute="bottom" id="juI-MO-TlF"/>
                             <constraint firstItem="ZBs-29-nhq" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="tP1-BX-hdI"/>
+                            <constraint firstItem="KRU-Wy-MVh" firstAttribute="leading" secondItem="VVe-Uw-JpX" secondAttribute="leading" id="yfw-Ik-hYV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VVe-Uw-JpX"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="closeButton" destination="HGJ-Ci-neT" id="vc8-6L-8BG"/>
-                        <outlet property="imageView" destination="9ga-4F-77Z" id="5y6-5w-9QO"/>
+                        <outlet property="imageView" destination="KRU-Wy-MVh" id="WNM-6g-l0t"/>
                         <outlet property="indexLabel" destination="ZBs-29-nhq" id="r4J-0J-IrZ"/>
+                        <outlet property="panGesture" destination="cqM-KB-ovc" id="5cI-16-8k5"/>
                         <outlet property="view" destination="zMn-AG-sqS" id="Qma-de-2ek"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="MjC-xc-Btf">
+                <tapGestureRecognizer id="JSI-IS-5NI">
                     <connections>
-                        <action selector="imageViewDidTap:" destination="ObA-dk-sSI" id="9Co-px-uD1"/>
+                        <action selector="imageViewDidTap:" destination="ObA-dk-sSI" id="MOa-xv-Pc6"/>
                     </connections>
                 </tapGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="ZVL-kh-9X3">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cqM-KB-ovc">
                     <connections>
-                        <action selector="imageViewDidPan:" destination="ObA-dk-sSI" id="c4J-MF-YpP"/>
+                        <action selector="imageViewDidPan:" destination="ObA-dk-sSI" id="6QX-eo-W60"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
